@@ -11,7 +11,6 @@ int main(void)
 	int command;
 	
 	printf("Введите два числа через пробел:\n ");
-	// Исправлено: %lf вместо %1f, убрана строгая запятая
 	scanf("%lf %lf", &a, &b); 
 	
 	printf("1 - сложение\n 2 - вычитание\n");
@@ -23,7 +22,7 @@ int main(void)
 	{
 	    case 1:
     	    result = a + b;
-    	    printf("Результат: %.2f\n", result); // Исправлено: %.2f для 2 знаков после запятой
+    	    printf("Результат: %.2f\n", result);
     	    break;
 	    
 	    case 2:
